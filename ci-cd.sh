@@ -17,7 +17,6 @@ if (-not $mkStatus) {
 } else {
     Write-Host "Minikube is already running." -ForegroundColor Green
 }
-
 # -----------------------------------
 # 2. Set Docker Environment to Minikube
 # -----------------------------------
