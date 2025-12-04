@@ -26,7 +26,7 @@ minikube docker-env | Invoke-Expression
 # -----------------------------------
 # 3. Build Docker Image
 # -----------------------------------
-$IMAGE_NAME = "btech:dev"
+$IMAGE_NAME = "class-btech:dev"
 Write-Host "Building Docker image $IMAGE_NAME ..." -ForegroundColor Cyan
 
 try {
@@ -42,7 +42,7 @@ try {
 Write-Host "Updating deployment.yaml with image $IMAGE_NAME ..." -ForegroundColor Cyan
 
 if (Test-Path "deployment.yaml") {
-    (Get-Content deployment.yaml) `
+    (Get-Content deployment.yaml) 
         -replace "image: .*", "image: $IMAGE_NAME" |
         Set-Content deployment.yaml
 } else {
