@@ -5,7 +5,7 @@
 
 # Ensure script stops immediately on a non-handled error
 $ErrorActionPreference = "Stop"
-
+#n
 # -----------------------------------
 # 1. Ensure Minikube is Running
 # -----------------------------------
